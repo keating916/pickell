@@ -1,12 +1,13 @@
 <!doctype html>
 <html>
     <head>
-        <title>TenderLovingSara</title>
+        <title>Testimonials</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="description" content="Premium Dog Walking Service">
         <meta name="keywords" content="Dog Walking, Pet Sitting, House sitting, Pet care, Folsom, Granite Bay">
         <link href="./css/template.css" rel="stylesheet">
+        <link href="./css/form.css" rel="stylesheet">
     </head>
     
     <body>
@@ -16,7 +17,29 @@
                 <li class= "navItem"><a href="./contact.html">Request Pet Interview</a></li>
                 <li class= "navItem"><a href="./testimonials.html">See Client Testimonials</a></li>
             </ul>
-            
         </nav>
         <main>
+            <header><h1>Customer Reviews</h1></header>
+            <form id="Rating">
+                <fieldset id="stars">
+                    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Terrible - 1 star"></label>
+                </fieldset>
+                
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input type="text" minlength="3" maxlength="32" id="firstName" required>
+                </div>
+                <div>
+                    <label for="comments>Additional Comments</label>
+                    <input type="textfield" id="comments">
+                </div>
+                <div>
+                    <button type="submit" id="submitButton">Submit Information</button>
+                </div>
+                
+            </form>
         </main>
