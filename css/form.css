@@ -1,0 +1,35 @@
+form {
+    border: 1px solid #ffbb00;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 30px;
+    display: flexbox;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: #ffbb00;
+    padding-bottom: 5px; 
+}
+
+div {
+    padding-left: 5%;
+    padding-top: 20px;
+}
+
+
+#radios {
+    display: block;
+}
+#radios input, #radios label {
+    display: inline;
+}
+button {
+    background-color: #ffbb00;
+    width: 50%;
+    border-radius: 20px;
+}

@@ -11,6 +11,7 @@ body {
 main {
     background: #1a1919cc;
     padding-top: 5%;
+    height: 100%;
 }
 
 h1, p, li, h2 {

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="Premium Dog Walking Service">
+        <meta name="keywords" content="Dog Walking, Pet Sitting, House sitting, Pet care, Folsom, Granite Bay">
+        <link href="./css/template.css" rel="stylesheet">
+        <link href="./css/form.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <nav>
+            <ul id="nav">
+                <li class= "navItem"><a href="./index.html">Home</a></li>
+                <li class= "navItem"><a href="./contact.html">Request Pet Interview</a></li>
+                <li class= "navItem"><a href="./testimonials.html">See Client Testimonials</a></li>
+            </ul>
+        </nav>
+        <main>
+            <header><h1>Request Pet Interview</h1></header>
+            <form id="contact">
+                <div>
+                    <label for="ownerName">Owners Name</label>
+                    <input type="text" minlength="3" maxlength="32" id="ownerName" required>
+                </div>
+                <div id="emailDiv">
+                   <label for="email">Enter Email</label>
+                    <input type="email" name="email" id="email" required> 
+                </div>
+                <div>
+                        <label for="phone">Enter Phone Number</label>
+                         <input type="tel" name="phone" id="phone" required> 
+                     </div>
+                <div>
+                    <label for="petName">Pet's Name</label>
+                    <input type="text" minlength="2" maxlength="16" name="petName" required>
+                </div>
+                <div id="radios">
+                    <input type="radio" id="cat" name="petType" value="cat">
+                    <label for="cat">Cat</label>
+                    <input type="radio" id="dog" name="petType" value="dog">
+                    <label for="dog">Dog</label>    
+                </div>
+                <div>
+                    <button type="submit" id="submitButton">Submit Information</button>
+                </div>
+                
+            </form>
+        </main>
