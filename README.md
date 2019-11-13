@@ -1,2 +1,1 @@
-Website for Pickell Family
-Dog walking and related Services
+Portfolio website to be deployed via Heroku
