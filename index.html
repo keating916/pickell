@@ -1,6 +1,6 @@
-<!doctype html>
+
 <html>
-    <head>
+    <head >
         <title>Keating Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
@@ -9,31 +9,154 @@
         <link href="./css/template.css" rel="stylesheet">
     </head>
     
-    <body>
-        <nav>
-            <ul id="nav">
-                <li class= "navItem"><a href="./index.html">Home</a></li>
-                <li class= "navItem"><a href="#contact.html">Contact</a></li>
-                <li class= "navItem"><a href="#projects">Projects</a></li>
-            </ul>
-            
-        </nav>
-        <main>
-            <header>
-                <h1><workLocation>Folsom, CA</workLocation>'s Premier Pet Service Provider</h1>
+    <body >
+      <nav id="navbar">
+        <ul id="nav">
+          
+          <li class= "navItem"><a href="#projects">Projects</a></li>
+          <li class= "navItem"><a href="#contact">Contact</a></li>
+          <li class= "navItem"><a href="#top">Top</a></li>
+          <li class= "navItem" ><a id="profile-link" href="https://github.com/keating916/" target="_blank">Github</a></li>
+        </ul>
+      </nav>
+        <main >
+            <header id="welcome-section">
+              <br id="top">
+              <h1 >Hi! I'm <givenName>Patrick</givenName> <familyName>Keating</familyName></h1>
+              <h2>I'm a Web Developer</h2><br>
+              <p>
+                I have been studying programming since December 2018, and I have been devouring material as fast as humanly possible. I started out with the basics of Python, as everything I read said that was the easiest to get started with. Then my current employer needed help with his website, so I dove into HTML/CSS/JS, and I haven't come back up for air!
+              </p>
+              <p>
+                I have completed the equivilent of 600 hours of curriculum from <a href="https://www.freecodecamp.org">FreeCodeCamp</a> and have loved every minute of it. I have read books on Node.Js and Express server setup, and I am simultaneously going through <a target="_new" href="https://www.theodinproject.com/">The Odin Project</a>.
+              </p>
+              <h3>Current Certifications</h3>
+              <div id="cert-div"class="toplistdiv">
+                <ul id="certs"class="topItems">
+                  <li>Responsive Web Design[FreeCodeCamp]</li>
+                  <li>Javascript Algorithms and Data Structures[FreeCodeCamp]</li>
+                  <li>SEO Fundamentals[SemRush]</li>
+                  <li>Technical SEO Exam[SemRush]</li>
+                  
+                </ul>
+              </div>
+              <br>
+              <h3>Some quick facts about me:</h3>
+              <div id="list-div" class="toplistdiv">
+                <ul id="facts" class="topItems">
+                  <li>I really like Programming in almost any language</li>
+                  <li>I learn really really fast. Like really fast</li>
+                  <li>Named <a target="_new" href="https://en.wikipedia.org/wiki/You_(Time_Person_of_the_Year)#/media/File:Time_youcover01.jpg">Time Magazine's</a> 2006 "Person of the Year"</li>
+                  <li>I like beer</li>
+                  <li>I wrote this page from scratch!</li>
+                </ul>
+              </div>
             </header> 
-            <h2>Meet <givenName>Sara</givenName></h2>
-            <p>Personal Information..//TODO</p>
-            <p>Time in area, <workLocation>areas serviced</workLocation></p>
-            <br><br><br>
-            
-            <h2>Additional Services Offered:</h2>
-            <ul>
-                <li>Pet Sitting</li>
-                <li>Administering Pet Medicine</li>
-                <li>//more items</li>
-            </ul>
-        </main>         
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"></script>
+        </main>
+        <section id="contact">
+          <br><br><br>
+          <form id="survey-form" action="mailto:keating916@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+          <div>
+            <label class="labels" for="name" id="name-label">Name</label>
+            <input class = "input" type="textbox" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+          <div>
+            <label class="labels" id="email-label" for="email">Email</label>
+            <input class = "input" type="email" id="email" name="email" placeholder="Enter your Email Address" required>
+          </div>
+          <div>
+            <label class="labels" id="number-label" for="number">Estimated Length of meeting (minutes)</label>
+            <input class = "input" type="number" min="1" max="60" id="number" name="number" placeholder="30" required>
+          </div>
+          <div id= "time-selector">
+            <p class="labels dropdown" >Preferred Day</p>
+            <p class="labels dropdown" id="dropdown2">Preferred Time of Day</p>
+            <select name="day" class="dropdown" id="dropdown">
+              <option selected value="any">Any</option>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value= "thursday">Thursday</option>
+              <option value= "friday">Friday</option>
+              <option value= "saturday">Saturday</option>
+            </select>
+            <select class="dropdown" name="TOD">
+              <option default value = "any" selected>Any</option>
+              <option value="morning">Morning</option>
+              <option value="afternoon">Afternoon</option>
+              <option value="evening">Evening</option>
+            </select>
+          </div>
+          <div>
+            <p class="labels">What type of employment/Project?</p>
+            <div class="radios">
+              <div>
+              <input class="radio" type="radio" name="employment" id="personal" value="personal"><label class="radioLabel" for="personal">Personal Project</label></input>
+            </div>
+            <div>
+              <input class="radio" type="radio" name="employment" value="part-time" id="part-time"><label class="radioLabel" for="part-time">Part-Time</label></input>
+            </div>
+            <div>
+              <input class="radio" type="radio" name="employment" value="full-time" id="full-time"><label class="radioLabel" for="full-time">Full-Time</label></input>
+            </div>
+            </div>
+          </div>
+          <div>
+            <p class="labels">What technologies will be used?</p>
+            <div class="checks" name="languages">
+              <div><input  type="checkbox" value="html"><label class ="check" for="html">HTML</label></input></div>
+              <div><input type="checkbox" value="css"><label class ="check" for="css">CSS</label></input></div>
+              <div><input type="checkbox" value="js"><label class ="check" for="js">Vanilla JavaScript</label></input></div>
+              <div><input type="checkbox" value="react"><label class ="check" for="react">React</label></input></div>
+              <div><input type="checkbox" value="vue.js"><label class ="check" for="vue.js">Vue.js</label></input></div>
+              <div><input type="checkbox" value="python"><label class ="check" for="python">Python</label></input></div>
+              <div><input type="checkbox" value="ruby"><label class ="check" for="ruby">Ruby</label></input></div>
+            </div>
+          </div>
+          <div>
+            <label class="labels" id="comments-label" for="comments">Any additional comments?</label>
+            <textarea class = "input" type="textbox" id="comments" name="comments"></textarea>
+          </div>
+          <div>
+            <button type="submit" id="submit">Submit</button
+          </div>
+      </form>
+    </section>
+    <br>
+    <section id="projects">
+      <div class="card project-tile"><a href="./projects/rps.html">
+        <img src="./rps.png" alt="Avatar" class="tiles-images">
+        <div class="container">
+          <h4><b>Rock Paper Scissors</b></h4>
+          <p>Text Based Random RPS Game</p>
+        </div>
+        </a>
+      </div>
+      <div class="card project-tile"><a href="./projects/goog.html">
+        <img src="https://blog.hubspot.com/hubfs/image8-2.jpg" alt="google reproduction" class="tiles-images">
+        <div class="container">
+          <h4><b>Google Home Page</b></h4>
+          <p>Reproduction of Google's Home page</p>
+        </div>
+        </a>
+      </div>
+      <div class="card project-tile"><a href="./projects/calc.html">
+        <img src="./snip.png" alt="Javascript Calculator" class="tiles-images">
+        <div class="container">
+          <h4><b>Javascript Calculator</b></h4>
+          <p>Browser calculator using HTML and Javascript</p>
+        </div>
+        </a>
+      </div>
+      <div class="card project-tile"><a href="./projects/etch.html">
+        <img src="./etch.jpg" alt="Etch a sketch" class="tiles-images">
+        <div class="container">
+          <h4><b>Etch-A-Sketch</b></h4>
+          <p>Etch-A-Sketch with your mouse!</p>
+        </div>
+        </a>
+      </div>
+    </section>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

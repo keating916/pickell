@@ -1,0 +1,33 @@
+body {
+    display: grid;
+    height: 100%; /* Or whatever */
+    margin: auto;
+    }
+      
+h1 {
+    width: auto;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    margin-left: 10%;  /* Magic! */
+}
+h2 {
+    width: 50%;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    display: inline-block;
+    display: inline;
+    margin: auto;
+}
+.score {
+    margin: auto;
+}
+h2 {
+    margin: auto;
+    margin-top: 0;
+    align-content: center;
+}
+div{
+    margin: auto;
+}
+form {
+    margin:auto;
+    align-self: center;
+}
